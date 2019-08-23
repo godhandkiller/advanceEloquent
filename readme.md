@@ -14,6 +14,26 @@ Even tho this wasn't what I expected I used some library that are very helpful t
 I was able to understand how eloquent create the sql query and how I can look for more functions that I can use to get information from the database. The tutorial also shows how to read the information on the function so you can use the functions better and pass information that is more legible.
 
 Like you can replace this 
--Post::where('foo', 'bar')->where('baz', 'biz')->delete();
-to this
--Post::where(['foo' => 'bar', 'baz' => 'biz'])->delete();
+```sh
+Post::where('foo', 'bar')->where('baz', 'biz')->delete();
+```
+
+with this
+
+```sh
+Post::where(['foo' => 'bar', 'baz' => 'biz'])->delete();
+```
+
+this
+
+```sh
+Post::where('foo', '=', 'bar');
+```
+
+with this
+
+```sh
+Post::where('foo', 'bar');
+```
+
+Plus the tutorial talked about eager loading and how it works, since it makes the query faster and safer for the user
