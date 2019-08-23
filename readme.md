@@ -38,3 +38,5 @@ Post::where('foo', 'bar');
 ```
 
 Plus the tutorial talked about eager loading and how it works, since it makes the query faster and safer for the user
+
+So at the end the tutorial wasn't much about coding but it was explaining was goes behind the curtin using eloquent.
